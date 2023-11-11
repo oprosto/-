@@ -885,50 +885,55 @@ end TCL_Generic;&#13;
       <polyline fill="none" points="60,50 70,60 60,70" stroke="#000000"/>
       <circ-anchor facing="east" height="6" width="6" x="167" y="57"/>
     </appear>
-    <wire from="(550,470)" to="(670,470)"/>
-    <wire from="(670,460)" to="(670,470)"/>
-    <wire from="(280,340)" to="(340,340)"/>
-    <wire from="(340,520)" to="(400,520)"/>
+    <wire from="(420,470)" to="(670,470)"/>
     <wire from="(400,190)" to="(460,190)"/>
-    <wire from="(400,190)" to="(400,450)"/>
-    <wire from="(310,540)" to="(630,540)"/>
-    <wire from="(340,210)" to="(340,340)"/>
+    <wire from="(600,260)" to="(600,270)"/>
     <wire from="(120,380)" to="(170,380)"/>
     <wire from="(260,190)" to="(260,390)"/>
     <wire from="(480,260)" to="(480,270)"/>
-    <wire from="(480,350)" to="(480,360)"/>
-    <wire from="(340,210)" to="(460,210)"/>
     <wire from="(170,380)" to="(170,590)"/>
+    <wire from="(530,300)" to="(570,300)"/>
     <wire from="(670,460)" to="(710,460)"/>
     <wire from="(170,300)" to="(170,380)"/>
     <wire from="(400,500)" to="(400,520)"/>
     <wire from="(830,290)" to="(830,320)"/>
-    <wire from="(500,190)" to="(500,210)"/>
-    <wire from="(550,470)" to="(550,500)"/>
-    <wire from="(400,520)" to="(400,870)"/>
     <wire from="(300,360)" to="(300,390)"/>
-    <wire from="(690,500)" to="(690,520)"/>
+    <wire from="(500,360)" to="(600,360)"/>
     <wire from="(460,190)" to="(500,190)"/>
-    <wire from="(880,340)" to="(900,340)"/>
-    <wire from="(300,360)" to="(460,360)"/>
-    <wire from="(610,500)" to="(630,500)"/>
     <wire from="(690,500)" to="(710,500)"/>
-    <wire from="(550,500)" to="(580,500)"/>
-    <wire from="(460,360)" to="(480,360)"/>
-    <wire from="(510,290)" to="(790,290)"/>
+    <wire from="(480,270)" to="(500,270)"/>
     <wire from="(260,190)" to="(400,190)"/>
     <wire from="(340,340)" to="(340,520)"/>
-    <wire from="(760,360)" to="(830,360)"/>
     <wire from="(170,590)" to="(250,590)"/>
     <wire from="(250,590)" to="(260,590)"/>
-    <wire from="(760,360)" to="(760,480)"/>
     <wire from="(280,340)" to="(280,390)"/>
+    <wire from="(670,460)" to="(670,470)"/>
+    <wire from="(280,340)" to="(340,340)"/>
+    <wire from="(340,520)" to="(400,520)"/>
+    <wire from="(310,540)" to="(690,540)"/>
+    <wire from="(400,190)" to="(400,450)"/>
+    <wire from="(570,300)" to="(570,310)"/>
+    <wire from="(600,350)" to="(600,360)"/>
+    <wire from="(340,210)" to="(340,340)"/>
+    <wire from="(340,210)" to="(460,210)"/>
+    <wire from="(510,260)" to="(510,270)"/>
+    <wire from="(500,270)" to="(500,280)"/>
+    <wire from="(500,190)" to="(500,210)"/>
+    <wire from="(400,520)" to="(400,870)"/>
+    <wire from="(460,360)" to="(500,360)"/>
+    <wire from="(880,340)" to="(900,340)"/>
+    <wire from="(690,500)" to="(690,540)"/>
+    <wire from="(300,360)" to="(460,360)"/>
+    <wire from="(510,260)" to="(540,260)"/>
+    <wire from="(630,290)" to="(790,290)"/>
+    <wire from="(570,260)" to="(600,260)"/>
+    <wire from="(760,360)" to="(830,360)"/>
+    <wire from="(500,270)" to="(510,270)"/>
+    <wire from="(760,360)" to="(760,480)"/>
     <wire from="(310,540)" to="(310,590)"/>
-    <wire from="(420,470)" to="(550,470)"/>
     <wire from="(460,360)" to="(460,870)"/>
     <wire from="(820,290)" to="(830,290)"/>
     <wire from="(460,130)" to="(460,190)"/>
-    <wire from="(680,520)" to="(690,520)"/>
     <wire from="(280,440)" to="(280,560)"/>
     <wire from="(280,620)" to="(280,870)"/>
     <comp lib="0" loc="(900,340)" name="Pin">
@@ -937,14 +942,13 @@ end TCL_Generic;&#13;
       <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(680,520)" name="AND Gate"/>
     <comp lib="0" loc="(120,380)" name="Pin">
       <a name="label" val="D"/>
     </comp>
+    <comp loc="(530,300)" name="Set_async_D_Latch"/>
     <comp lib="1" loc="(480,260)" name="OR Gate">
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(510,290)" name="Set_async_D_Latch"/>
     <comp lib="1" loc="(880,340)" name="AND Gate"/>
     <comp loc="(310,590)" name="Enabled_Flip_Flop"/>
     <comp lib="1" loc="(280,440)" name="OR Gate">
@@ -957,12 +961,12 @@ end TCL_Generic;&#13;
       <a name="facing" val="south"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="1" loc="(610,500)" name="NOT Gate"/>
     <comp lib="1" loc="(760,480)" name="OR Gate"/>
     <comp lib="0" loc="(400,870)" name="Pin">
       <a name="facing" val="north"/>
       <a name="label" val="set"/>
     </comp>
+    <comp lib="1" loc="(570,260)" name="NOT Gate"/>
     <comp lib="0" loc="(460,870)" name="Pin">
       <a name="facing" val="north"/>
       <a name="label" val="reset"/>
@@ -971,6 +975,7 @@ end TCL_Generic;&#13;
       <a name="facing" val="north"/>
       <a name="label" val="enable"/>
     </comp>
+    <comp loc="(630,290)" name="Set_async_D_Latch"/>
   </circuit>
   <circuit name="D_trigger_2">
     <a name="circuit" val="D_trigger_2"/>
